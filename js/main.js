@@ -101,12 +101,21 @@ document.addEventListener("DOMContentLoaded", () => {
   renderControls();
   window.loadSeries();
 
-  document.getElementById("controls").addEventListener("input", () => {
+  let debounceTimer;
+  document.getElementById("search").addEventListener("input", () => {
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(() => {
+      currentPage = 1;
+      window.loadSeries();
+    }, 400);
+  });
+
+  document.getElementById("sort").addEventListener("change", () => {
     currentPage = 1;
     window.loadSeries();
   });
 
-  document.getElementById("controls").addEventListener("change", () => {
+  document.getElementById("order").addEventListener("change", () => {
     currentPage = 1;
     window.loadSeries();
   });
