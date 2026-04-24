@@ -2,6 +2,8 @@
 - **Backend:** https://github.com/fabianpradod/proyecto1-web-bck
 - **Backend API:** https://proyecto1-web-bck.onrender.com
 - **Swagger UI:** https://proyecto1-web-bck.onrender.com/docs
+- **Frontend link:** https://fabianpradod.github.io/proyecto1-web-frt/
+
 
 ## Correr localmente
 
