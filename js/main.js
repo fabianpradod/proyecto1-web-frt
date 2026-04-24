@@ -12,11 +12,16 @@ function getParams() {
   return { q, sort, order, page: currentPage, limit };
 }
 
+let isLoading = false;
+
 window.loadSeries = async function () {
+  if (isLoading) return;
+  isLoading = true;
   const params = getParams();
   await renderSeries(params);
   renderPagination(currentPage, limit);
   bindPagination();
+  isLoading = false;
 };
 
 function bindPagination() {

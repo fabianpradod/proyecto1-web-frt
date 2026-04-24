@@ -6,10 +6,10 @@ export function renderControls() {
   controls.innerHTML = `
     <input type="text" id="search" placeholder="Buscar serie..." />
     <select id="sort">
-      <option value="id">ID</option>
-      <option value="name">Nombre</option>
-      <option value="genre">Género</option>
-      <option value="episodes">Episodios</option>
+    <option value="id" selected>ID</option>
+    <option value="name">Nombre</option>
+    <option value="genre">Género</option>
+    <option value="episodes">Episodios</option>
     </select>
     <select id="order">
       <option value="asc">Ascendente</option>
