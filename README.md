@@ -1,3 +1,26 @@
+## LINKS
+- **Backend:** https://github.com/fabianpradod/proyecto1-web-bck
+- **Backend API:** https://proyecto1-web-bck.onrender.com
+- **Swagger UI:** https://proyecto1-web-bck.onrender.com/docs
+
+## Correr localmente
+
+El frontend es estático, no necesita servidor ni instalación. Dos opciones:
+
+### Opción 1 — Abrir directo
+Simplemente abrir `index.html` en tu navegador.
+
+### Opción 2 — Servidor local
+```bash
+npx serve .
+```
+Luego abrir `http://localhost:3000`.
+
+> **Nota:** Por defecto apunta a la API en producción (`https://proyecto1-web-bck.onrender.com`).
+> ```javascript
+> const BASE_URL = "http://localhost:8080";
+> ```
+
 ## Funcionalidades
 
 - Ver lista de series con imagen, género, estado, episodios y rating
